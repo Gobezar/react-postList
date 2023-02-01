@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Tinos&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e2daf2;
+  font-family: "Tinos", serif;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+#root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App {
+  width: 800px;
+}
+
+.post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  margin-top: 15px;
+  border: 2px solid #3b8743;
+  border-radius: 10px;
+  background-color: #cffad4;
+}
+.post button {
+  font-size: 20px;
+  font-family: "Tinos", serif;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#without_posts {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Tinos", serif;
+  margin-top: 15px;
+}
+
+#without_posts_img {
+  margin-top: 20px;
+}
+#without_posts_img img {
+  width: 250px;
+  height: 300px;
+}
+
+.sort_select {
+  padding: 5px;
+  font-size: 20px;
+  font-family: "Tinos", serif;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.pagination_wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#pagination_number {
+  padding: 7px 10px;
+  margin-right: 10px;
+}
+
+#pagination_number_current {
+  padding: 7px 10px;
+  margin-right: 10px;
+  background-color: #bcc2f7;
+  border: 2px solid #000;
+}

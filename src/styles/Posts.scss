@@ -1,0 +1,19 @@
+h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+.postTransition-enter {
+    opacity: 0;
+  }
+  .postTransition-enter-active {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+  }
+  .postTransition-exit {
+    opacity: 1;
+  }
+  .postTransition-exit-active {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }

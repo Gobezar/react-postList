@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+
+$fontSize: 20px;
+$fontFamily: 'Tinos', serif;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e2daf2;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    padding-top: 20px;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+}
+
+.App {
+    width: 800px;
+}
+
+.post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-top: 15px;
+    border: 2px solid #3b8743;
+    border-radius: 10px;
+    background-color: #cffad4;
+
+    button {
+        font-size: $fontSize;
+        font-family: $fontFamily;
+        border: 1px solid #000;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: #fff;
+        cursor: pointer;
+    }
+}
+
+#without_posts {
+    text-align: center;
+    font-size: 25px;
+    font-family: $fontFamily;
+    margin-top: 15px;
+}
+
+#without_posts_img {
+    margin-top: 20px;
+
+    img {
+        width: 250px;
+        height: 300px;
+    }
+}
+
+.sort_select {
+    padding: 5px;
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.pagination_wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#pagination_number {
+    padding: 7px 10px;
+    margin-right: 10px;
+}
+
+#pagination_number_current {
+    padding: 7px 10px;
+    margin-right: 10px;
+    background-color: #bcc2f7;
+    border: 2px solid #000;
+}
