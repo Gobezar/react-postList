@@ -8,16 +8,19 @@ body {
   background-color: #e2daf2;
   font-family: "Tinos", serif;
   font-size: 20px;
-  padding-top: 20px;
 }
 
 #root {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .App {
@@ -48,6 +51,20 @@ body {
   padding: 5px;
   background-color: #fff;
   cursor: pointer;
+}
+
+.post_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.post_comments {
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+.post_comments p {
+  font-style: italic;
 }
 
 #without_posts {
@@ -88,4 +105,53 @@ body {
   margin-right: 10px;
   background-color: #bcc2f7;
   border: 2px solid #000;
+}
+
+.navbar {
+  max-width: 800px;
+  height: 50px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  background-color: rgba(188, 194, 247, 0.4);
+  margin-bottom: 20px;
+}
+
+.navbar_links {
+  margin-right: auto;
+}
+.navbar_links a {
+  margin-right: 20px;
+  font-family: "Tinos", serif;
+  font-size: 21px;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  color: black;
+  padding-bottom: 3px;
+}
+.navbar_links a:hover {
+  border-bottom: 1px solid black;
+}
+
+.login_warning {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: white;
+  color: #3b8743;
+  text-align: center;
+}
+
+.about {
+  max-width: 800px;
+  margin-top: 20px;
+  font-style: italic;
+  text-align: center;
 }

@@ -2,6 +2,7 @@ import React from 'react'
 
 const Sort = ({ options, defaultValue, value, onChange }) => {
     return (
+
         <select
             value={value}
             onChange={ event => onChange(event.target.value)}
@@ -13,6 +14,10 @@ const Sort = ({ options, defaultValue, value, onChange }) => {
                 </option>
             )}
         </select>
+
+        
+
+        
     )
 }
 export default Sort;

@@ -12,12 +12,12 @@ body {
     background-color: #e2daf2;
     font-family: $fontFamily;
     font-size: $fontSize;
-    padding-top: 20px;
 }
 
 #root {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .App {
@@ -42,6 +42,19 @@ body {
         padding: 5px;
         background-color: #fff;
         cursor: pointer;
+    }
+}
+
+.post_btns {
+    display: flex;
+}
+
+
+.post_comments {
+    max-width: 800px;
+    margin-bottom: 30px;
+    p {
+    font-style: italic;
     }
 }
 
@@ -84,4 +97,50 @@ body {
     margin-right: 10px;
     background-color: #bcc2f7;
     border: 2px solid #000;
+}
+
+.navbar {
+    max-width: 800px;
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background-color: rgb(188, 194, 247, 0.4);
+    margin-bottom: 20px;
+}
+.navbar_links {
+    margin-right: auto;
+
+    a {
+        margin-right: 20px;
+        font-family: $fontFamily;
+        font-size: 21px;
+        text-decoration: none;
+        cursor: pointer;
+        border-bottom: 1px solid transparent;
+        color: black;
+        padding-bottom: 3px;
+
+            &:hover {
+            border-bottom: 1px solid black;
+        }
+    }
+}
+
+.login_warning {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: white;
+    color: #3b8743;
+    text-align: center;
+}
+
+.about {
+    max-width: 800px;
+    margin-top: 20px;
+    font-style: italic;
+    text-align: center;
 }

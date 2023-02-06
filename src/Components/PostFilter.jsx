@@ -4,7 +4,8 @@ import MyInput from "../UI/Input/MyInput";
 import MyButton from '../UI/Button/MyButton';
 
 
-const PostFilter = ({ filter, setFilter, setPosts }) => {
+
+const PostFilter = ({ filter, setFilter, setPosts, limitPages, setLimitPages }) => {
 
     const removeAllPosts = () => {
         setPosts([])
@@ -32,6 +33,17 @@ const PostFilter = ({ filter, setFilter, setPosts }) => {
                 style={{ marginLeft: '10px' }}>
                 Удалить всё
             </MyButton>
+
+            {/* <Sort
+                value={limitPages}
+                onChange={value => setLimitPages(value)}
+                defaultValue='Количество элементов на странице'
+                options={[
+                    {value:5, name:'5'}, 
+                    {value:10, name:'10'}, 
+                    {value:25, name:'25'}, 
+                    {value:-1, name:'Показать все посты'}, 
+                ]}/> */}
         </div>
     )
 }
